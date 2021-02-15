@@ -632,6 +632,26 @@ figure.snip1321.hover:after {
 
 /* Contact Me */
 
+/* Contact Me */
+
+.contact-us-detail {
+    margin-top: 10px;
+}
+
+.contact-us-detail i {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.contact-us-detail a {
+    color: #fff;
+}
+
+.contact-us-detail a:hover {
+    color: #fff;
+}
+
+
 section.contact-me {
     border-bottom: none;
 }
