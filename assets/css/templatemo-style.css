@@ -630,7 +630,6 @@ figure.snip1321.hover:after {
 }
 
 
-/* Contact Me */
 
 /* Contact Me */
 
@@ -829,3 +828,126 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
+
+/* My added css*/
+.margin-top-150 {
+	margin-top: 150px !important;
+}
+
+/* Qualification and Experience */
+
+.experience {
+	margin-left: 70px;
+	padding: 10px 0px;
+}
+
+.experience-item {
+	position: relative;
+	margin: 40px 0px;
+}
+
+.experience-circle {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 14px;
+	border-radius: 100%;
+	position: absolute;
+	left: -60px;
+	color: #a14d55;
+    background: #fff;
+	padding-top: 25px;
+    box-shadow: -5px 6px 4px 0px #865055;
+}
+
+.experience-circle i {
+	display: block;
+	font-size: 40px;
+}
+
+.experience-company i {
+	font-size: 40px !important;
+	margin-top: 15px !important;
+}
+
+.experience-circle span {
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.experience-content {
+	margin-left: 80px;
+	position: relative;
+	background: #fff;
+	border: 2px solid #f7639a;
+	border-radius: 6px;
+	padding: 20px 25px;
+}
+
+.experience-content h3 {
+    line-height: 30px;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.experience-content h4{
+    font-size: 12px;
+    color: #1e1e1e;
+}
+.experience-content b{
+    font-size: 16px;
+    color: black;
+}
+
+.experience-content:after, 
+.experience-content:before {
+	right: 100%;
+	top: 35%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.experience-content:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 12px;
+	margin-top: -20px;
+}
+
+.experience-content:before {
+	border-color: rgba(238, 238, 238, 0);
+	border-right-color: #f7639a;
+	border-width: 16px;
+	margin-top: -21px;
+}
+
+.experience-content p {
+    color: #696969;
+}
+
+
+.experience-content ul{
+
+    list-style-type: circle;
+}
+
+.experience-content ul li{
+    display: list-item;
+    margin: 5px;
+    color: #696969;
+}
+
+
+.experience-color-theme {
+	border: 2px solid#a43f49 !important;
+}
+
+.experience-color-theme:before {
+	border-right-color: #a43f49 !important;
+}
+
