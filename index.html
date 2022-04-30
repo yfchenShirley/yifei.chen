@@ -218,12 +218,17 @@
                       target="_blank"><i class="fa fa-eye"></i></a>
                     <h4>An Investigation into the Effect of the Learning Rate on Overestimation Bias of Connectionist
                       Q-learning</h4>
-                    <span>In this paper, we present a novel analysis of the overestimation problem in Q-learning using
-                      various control tasks.
-                      We focus our analysis on the effect of the learning rate when training the MLP.
-                      Experiments have been performed using various maze-solving problems involving deterministic or
-                      stochastic transition functions and 2D or 3D grids
-                      and two Open-AI gym control problems.</span>
+                    <span>In Reinforcement learning, Q-learning is the best-known algorithm but it suffers from overestimation bias, 
+                      which may lead to poor performance or unstable learning. In this paper, we present a novel analysis of this problem using various control tasks. 
+                      For solving these tasks, Q-learning is combined with a multilayer perceptron (MLP), experience replay, and a target network. 
+                      We focus our analysis on the effect of the learning rate when training the MLP. 
+                      Furthermore, we examine if decaying the learning rate over time has advantages over static ones. 
+                      Experiments have been performed using various maze-solving problems involving deterministic or stochastic transition functions 
+                      and 2D or 3D grids and two Open-AI gym control problems. We conducted the same experiments with Double Q-learning using two MLPs with the same parameter settings, 
+                      but without target networks. The results on the maze problems show that for Q-learning combined with the MLP, 
+                      the overestimation occurs when higher learning rates are used and not when lower learning rates are used. 
+                      The Double Q-learning variant becomes much less stable with higher learning rates and with low learning rates the overestimation bias may still occur. 
+                      Overall, decaying learning rates clearly improves the performances of both Q-learning and Double Q-learning.</span>
                   </figcaption>
                 </figure>
               </div>
