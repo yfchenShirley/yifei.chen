@@ -333,49 +333,6 @@
           </div>
 
         </div>
-
-
-        <div class="row">
-          <div class="right-content">
-            <div class="container">
-              <form id="contact">
-                <div class="row">
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
-                        required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">
-                        Send Message
-                      </button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   </div>
@@ -390,22 +347,6 @@
   <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    $("#contact").on("submit", function (event) {
-      event.preventDefault();
-
-      var name = $("#name").val();
-      var email = $("#email").val();
-      var subject = $("#subject").val();
-      var message = $("#message").val();
-      var body = "Name: " + name + "\n"
-        + "Email: " + email + "\n\n"
-        + message;
-
-      window.location.href = "mailto:yifei.chen@data61.csiro.au"
-        + "?subject=" + encodeURIComponent(subject)
-        + "&body=" + encodeURIComponent(body);
-    });
-
     //according to loftblog tut
     $(".main-menu li:first").addClass("active");
 
