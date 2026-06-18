@@ -338,10 +338,7 @@
         <div class="row">
           <div class="right-content">
             <div class="container">
-              <form id="contact" action="https://formsubmit.co/yifei.chen@data61.csiro.au" method="POST">
-                <input type="hidden" name="_subject" value="New message from Yifei Chen homepage" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://yfchenshirley.github.io/yifei.chen/" />
+              <form id="contact">
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
@@ -393,6 +390,22 @@
   <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
+    $("#contact").on("submit", function (event) {
+      event.preventDefault();
+
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val();
+      var message = $("#message").val();
+      var body = "Name: " + name + "\n"
+        + "Email: " + email + "\n\n"
+        + message;
+
+      window.location.href = "mailto:yifei.chen@data61.csiro.au"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+    });
+
     //according to loftblog tut
     $(".main-menu li:first").addClass("active");
 
